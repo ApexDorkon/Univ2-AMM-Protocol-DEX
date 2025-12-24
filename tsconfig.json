@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    /* Core settings */
+    "target": "ES2020",                       // ✅ Needed for BigInt literals
+    "lib": ["dom", "dom.iterable", "es2020"], // ✅ ES2020 includes BigInt & modern APIs
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "jsx": "preserve",
+    "incremental": true,
+
+    /* Strictness */
+    "strict": true,
+    "skipLibCheck": true,
+    "allowJs": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+
+    /* Next.js plugin for TS */
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+
+    /* Path aliases (optional but clean) */
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+
+  /* Files to include */
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts"
+  ],
+
+  /* Ignore node_modules */
+  "exclude": ["node_modules"]
+}
