@@ -1,12 +1,12 @@
 {
   "compilerOptions": {
     /* Core settings */
-    "target": "ES2020",                       // ✅ Needed for BigInt literals
-    "lib": ["dom", "dom.iterable", "es2020"], // ✅ ES2020 includes BigInt & modern APIs
+    "target": "ES2020",                       
+    "lib": ["dom", "dom.iterable", "es2020"], 
     "module": "esnext",
     "moduleResolution": "bundler",
     "jsx": "preserve",
-    "incremental": true,
+    "incremental":s true,
 
     /* Strictness */
     "strict": true,

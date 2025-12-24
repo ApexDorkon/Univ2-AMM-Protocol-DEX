@@ -21,7 +21,7 @@ export default function Header() {
           href="/"
           className="text-accent font-semibold text-lg tracking-wide hover:opacity-90 transition"
         >
-          id3ntity DEX
+          DEX
         </Link>
 
         {/* Navigation */}
